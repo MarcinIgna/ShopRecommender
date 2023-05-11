@@ -8,6 +8,12 @@ ShopRecommender is a machine learning-based algorithm designed to provide person
 
 The algorithm utilizes techniques such as collaborative filtering and cosine similarity to identify similar users and recommend products based on their past interactions. It leverages a dataset of user-item interactions and learns from patterns to make accurate recommendations.
 
+Additionally, ShopRecommender offers options for both administrators and users, allowing administrators to manage and update product inventory, and users to perform actions such as adding items to their orders, deleting items, and accessing other basic functionalities.
+
+Feel free to use ShopRecommender to enhance the shopping experience and deliver tailored recommendations to your users.
+
+Please note that the description can be further refined based on your specific project features and functionalities.
+
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/yourusername/ShopRecommender.git`
