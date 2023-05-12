@@ -18,6 +18,25 @@ Please note that the description can be further refined based on your specific p
 
 1. Clone the repository: `git clone https://github.com/yourusername/ShopRecommender.git`
 2. Install the required dependencies: `pip install -r requirements.txt`
+3. Install and configure PostgreSQL:
+
+   a. Install PostgreSQL on your system. Refer to the PostgreSQL documentation for instructions specific to your operating system.
+
+   b. Create a new empty database. You can use the following command:
+      ```
+      createdb -U postgres new_database
+      ```
+      Replace `postgres` with the appropriate username and `new_database` with the desired name for the database.
+
+4. Import the PostgreSQL database:
+
+   a. Locate the downloaded SQL file within the cloned Git repository.
+
+   b. Run the following command to import the database using the `psql` command-line tool:
+      ```
+      psql -U postgres -d new_database -f /path/to/output_file.sql --host=localhost --port=5432 -W
+      ```
+      Replace `postgres` with the appropriate username, `new_database` with the name of the target database, and `/path/to/output_file.sql` with the path to the SQL file. Ensure that `--host` and `--port` reflect the correct PostgreSQL server details.
 
 ## Usage
 
@@ -29,6 +48,7 @@ Please note that the description can be further refined based on your specific p
 ## Data Sources
 
 The algorithm uses a dataset of user-item interactions, which includes user IDs, product IDs, and interaction data. This data is collected from PostgreSQL.
+
 
 ## Algorithms and Techniques
 
