@@ -27,7 +27,7 @@ class AdminMenu():
             if add_or_del == "add":
                 Product.add_product()
             elif add_or_del == "del":
-                Product.delete_product_by_id()
+                Product.delete_product()
         elif option == "q":
             exit()
         else:

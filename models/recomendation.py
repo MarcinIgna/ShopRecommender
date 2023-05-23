@@ -4,7 +4,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 def get_user_recommendations(user_id):
-    top_n = 2
+    top_n = 2 # Number of recommendations to return
     engine = create_engine('postgresql://postgres:qwertz@localhost:5432/machine_learning_1')
 
     # Fetch user-item interactions data from the database
