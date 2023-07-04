@@ -58,6 +58,7 @@ The algorithm uses a dataset of user-item interactions, which includes user IDs,
 ## Results
 
 The algorithm has been evaluated using various metrics such as precision, recall, and mean average precision. It has shown promising results in providing relevant and accurate shopping recommendations to users.
+![presentation](rec_terminal.png)
 
 
 ## Contact
